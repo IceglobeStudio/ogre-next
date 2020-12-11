@@ -1,10 +1,10 @@
 
-@echo off
+@echo on
 SETLOCAL
 
-set OGRE_BRANCH_NAME={0}
-set GENERATOR="{1}"
-set PLATFORM={2}
+set OGRE_BRANCH_NAME="%~1"
+set GENERATOR="%~2"
+set PLATFORM="%~3"
 
 set CMAKE_BIN_x86="C:\Program Files (x86)\CMake\bin\cmake.exe"
 set CMAKE_BIN_x64="C:\Program Files\CMake\bin\cmake.exe"
